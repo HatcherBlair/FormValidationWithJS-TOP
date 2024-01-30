@@ -1,0 +1,23 @@
+.content {
+  width: 50vw;
+  height: 50vh;
+}
+
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+input:focus {
+  outline: none;
+}
+
+input:valid {
+  border-color: #4caf50;
+  background-color: #e9f7ef;
+}
+
+input:invalid {
+  border-color: #ff5733;
+  background-color: #fce4d6;
+}

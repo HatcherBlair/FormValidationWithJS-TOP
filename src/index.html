@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validator</title>
+  </head>
+  <body>
+    <div class="content">
+      <form novalidate>
+        <label for="email">Email Address: </label>
+        <input type="email" name="email" id="email" required minlength="8" />
+        <span class="error" aria-live="polite"></span>
+
+        <label for="country">Country: </label>
+        <input type="text" name="country" id="country" required minlength="3" />
+        <span class="error" aria-live="polite"></span>
+
+        <label for="zip">Zip Code:</label>
+        <input type="number" name="zip" id="zip" required />
+        <span class="error" aria-live="polite"></span>
+
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          required
+          minlength="10"
+          maxlength="16"
+        />
+        <span class="error" aria-live="polite"></span>
+
+        <label for="confirm">Confirm Password: </label>
+        <input
+          type="password"
+          name="confirm-password"
+          id="confirm"
+          required
+          maxlength="16"
+          minlength="10"
+        />
+        <span class="error" aria-live="polite"></span>
+
+        <button type="submit" id="submit-btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
